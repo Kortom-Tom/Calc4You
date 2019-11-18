@@ -14,4 +14,6 @@
 
     Moet je Toetsenbord gebruiken bij het gebruiken van de rekenmachine?
     
-   
+    Moet er een bepaalde kleur thema zijn?
+    
+    
