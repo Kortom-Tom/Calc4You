@@ -68,5 +68,11 @@ namespace Rekenmachine
             textBox1.Text = "0";
         }
         #endregion
+        #region Text waar alles in komt kwa berekeningen en cijfers.(Textbox1)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        #endregion
     }
 }
