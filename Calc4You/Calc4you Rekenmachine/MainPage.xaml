@@ -21,7 +21,7 @@
         <Button x:Name="button3" Content="3" Margin="584,305,0,0" VerticalAlignment="Top" Height="74" Width="194" FontWeight="Bold" FontSize="45" Click="button3_Click"/>
         <Button x:Name="buttonProcent" Content="%" Margin="186,384,0,0" VerticalAlignment="Top" Height="74" Width="194" FontWeight="Bold" FontSize="45" Click="buttonProcent_Click"/>
         <Button x:Name="buttonPunt" Content="," Margin="584,384,0,0" VerticalAlignment="Top" Height="74" Width="194" FontSize="45" FontWeight="Bold" Click="buttonPunt_Click"/>
-        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="186,35,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="107" Width="592" HorizontalTextAlignment="Center" TextAlignment="Right" FontSize="60" FontWeight="Bold"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="186,35,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="107" Width="592" HorizontalTextAlignment="Center" TextAlignment="Right" FontSize="60" FontWeight="Bold"/>
         <Button x:Name="buttonClear" Content="C" Margin="783,35,0,0" VerticalAlignment="Top" Height="107" Width="199" FontSize="60" FontWeight="Bold" Click="name_Click"/>
         <Button x:Name="buttonDelete" Content="⌫" Margin="987,35,0,0" VerticalAlignment="Top" Height="107" Width="199" FontSize="65"/>
         <Button Content="+" Margin="783,147,0,0" VerticalAlignment="Top" Height="74" Width="199" FontSize="45" FontWeight="Bold"/>
