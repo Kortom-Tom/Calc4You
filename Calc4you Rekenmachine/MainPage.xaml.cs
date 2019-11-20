@@ -27,146 +27,83 @@ namespace Calc4you_Rekenmachine
             this.InitializeComponent();
         }
         #region Nummer van rekenmachine.
-        private void button1_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Laat de cijfers zien in de textbox achter elkaar.
+        /// </summary>
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "1";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "1";
-            }
+            TextBox.Text += "1";
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "2";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "2";
-            }
+            TextBox.Text += "2";
         }
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void Button3_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "3";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "3";
-            }
+            TextBox.Text += "3";
         }
 
-        private void button4_Click(object sender, RoutedEventArgs e)
+        private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "4";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "4";
-            }
+            TextBox.Text += "4";
         }
 
-        private void button5_Click(object sender, RoutedEventArgs e)
+        private void Button5_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "5";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "5";
-            }
+            TextBox.Text += "5";
         }
 
-        private void button6_Click(object sender, RoutedEventArgs e)
+        private void Button6_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "6";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "6";
-            }
+            TextBox.Text += "6";
         }
 
-        private void button7_Click(object sender, RoutedEventArgs e)
+        private void Button7_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "7";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "7";
-            }
+            TextBox.Text += "7";
         }
 
-        private void button8_Click(object sender, RoutedEventArgs e)
+        private void Button8_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "8";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "8";
-            }
+            TextBox.Text += "8";
         }
 
-        private void button9_Click(object sender, RoutedEventArgs e)
+        private void Button9_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "9";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "9";
-            }
+            TextBox.Text += "9";
         }
-        private void button0_Click(object sender, RoutedEventArgs e)
+        private void Button0_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = "0";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + "0";
-            }
+            TextBox.Text += "0";
         }
-        #region punt en komma onder de cijfer van rekenmachine.
-        private void buttonPunt_Click(object sender, RoutedEventArgs e)
+        #region punt of komma en procenten onder de cijfer van rekenmachine.
+        /// <summary>
+        /// Laat de punt en komma zien en laat de gebruiker alleen een keer gebruiken.
+        /// </summary>
+
+        private void ButtonPunt_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox.Text == "0" && TextBox.Text != null)
-            {
-                TextBox.Text = ",";
-            }
-            else
-            {
-                TextBox.Text = TextBox.Text + ",";
-            }
+            TextBox.Text += ",";
+            buttonPunt.IsEnabled = false;
+        }
+        private void ButtonProcent_Click(object sender, RoutedEventArgs e)
+        {
+            TextBox.Text += "%";
+            buttonProcent.IsEnabled = false;
         }
         #endregion
         #endregion
-
-        private void name_Click(object sender, RoutedEventArgs e)
+        #region Delete en undo.
+        /// <summary>
+        /// Clear knop waar je alles mee kan gaan delete.
+        /// </summary>
+        private void Name_Click(object sender, RoutedEventArgs e)
         {
-            TextBox.Text = "0";
+            TextBox.Text = "";
+            buttonPunt.IsEnabled = true;
+            buttonProcent.IsEnabled = true;
         }
-
-        private void buttonProcent_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        #endregion
     }
 }
