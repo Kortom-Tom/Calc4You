@@ -105,12 +105,13 @@ namespace Calc4you_Rekenmachine
             buttonProcent.IsEnabled = true;
         }
         #endregion
-        public void euro_Click(object sender, RoutedEventArgs e)
+        public void EuroDollarKoers(object sender, RoutedEventArgs e)
         {
          try
             {
-             decimal _bedragInEuro = Convert.ToDecimal(TextBox.Text);
-             
+                TextBox.Text = Convert.ToDecimal((decimal, _bedragInEuro));
+
+
             }
             catch
             {
