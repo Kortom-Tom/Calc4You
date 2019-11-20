@@ -105,22 +105,18 @@ namespace Calc4you_Rekenmachine
             buttonProcent.IsEnabled = true;
         }
         #endregion
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void euro_Click(object sender, RoutedEventArgs e)
         {
+         try
+            {
+             decimal _bedragInEuro = Convert.ToDecimal(TextBox.Text);
+             
+            }
+            catch
+            {
 
-            
-            decimal bedrag = Convert.ToDecimal(TextBox.Text);
-            try
-            {
-                //Console.WriteLine(Wisselkoers.EuroDollarKoers(bedrag));
-              // decimal bedrag = (Wisselkoers.EuroDollarKoers(bedrag));
             }
-            catch (Exception ex)
-            {
-                //Console.WriteLine("Uw heeft geen internet");
-            }
-            
         }
     }
 }
+    
