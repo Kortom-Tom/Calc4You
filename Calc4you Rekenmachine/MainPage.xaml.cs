@@ -114,7 +114,7 @@ namespace Calc4you_Rekenmachine
             try
             {
                 //Console.WriteLine(Wisselkoers.EuroDollarKoers(bedrag));
-               decimal bedrag = (Wisselkoers.EuroDollarKoers(bedrag));
+              // decimal bedrag = (Wisselkoers.EuroDollarKoers(bedrag));
             }
             catch (Exception ex)
             {

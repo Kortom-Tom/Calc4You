@@ -25,7 +25,7 @@ namespace Calc4you_Rekenmachine
                 decimal USD2 = Convert.ToDecimal(USD1);
 
                 return _bedragInEuro * USD2;
-
+                // API CALL
             }
         }
     }
