@@ -132,5 +132,21 @@ namespace Calc4you_Rekenmachine
 
         }
         #endregion
+
+        public void ButtonEuroDollar(object sender, RoutedEventArgs e)
+        {
+         try
+            {
+                this.TextBox.AcceptsReturn = false;
+               
+
+
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
+    
