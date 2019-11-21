@@ -30,7 +30,7 @@
         <Button x:Name="buttonDelen" Content="/" Margin="783,384,0,0" VerticalAlignment="Top" Height="74" Width="199" FontSize="45" FontWeight="Bold"/>
         <Button Content="Button" Margin="987,147,0,0" VerticalAlignment="Top" Height="74" Width="199"/>
         <Button Content="Button" Margin="987,226,0,0" VerticalAlignment="Top" Height="74" Width="199"/>
-        <Button Content="EU > DOLLAR" Margin="987,305,0,0" VerticalAlignment="Top" Height="74" Width="199" Click="euro_Click"/>
+        <Button x:Name="buttonEuroDollar" Content="EU > DOLLAR" Margin="987,305,0,0" VerticalAlignment="Top" Height="74" Width="199" Click="ButtonEuroDollar"/>
         <Button Content="Button" Margin="987,384,0,0" VerticalAlignment="Top" Height="74" Width="199"/>
     </Grid>
 </Page>
