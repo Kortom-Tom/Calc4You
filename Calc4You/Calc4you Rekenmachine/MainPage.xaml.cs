@@ -68,7 +68,7 @@ namespace Calc4you_Rekenmachine
         {
             TextBox.Text += 8;
         }
-
+        // commit
         private void button9_Click(object sender, RoutedEventArgs e)
         {
             TextBox.Text += 9;
