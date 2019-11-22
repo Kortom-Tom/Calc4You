@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Calc4you_Rekenmachine
 {
+    
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -108,17 +110,20 @@ namespace Calc4you_Rekenmachine
 
         public void ButtonEuroDollar(object sender, RoutedEventArgs e)
         {
+            
          try
             {
-                this.TextBox.AcceptsReturn = false;
-               
+                public static string _bedragInEuro = TextBox.Text;
 
 
-            }
+
+
+    }
             catch
             {
 
             }
+           
         }
     }
 }
